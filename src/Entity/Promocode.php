@@ -6,6 +6,7 @@ use App\Repository\PromocodeRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: PromocodeRepository::class)]
+#[ORM\UniqueConstraint(name: 'keyword_uniq_idx', columns: ['keyword'])]
 class Promocode
 {
     #[ORM\Id]
