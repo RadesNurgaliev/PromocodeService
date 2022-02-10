@@ -3,11 +3,8 @@
 namespace App\Controller;
 
 use App\Entity\Promocode;
-use App\Repository\PromocodeRepository;
 use App\Services\KeywordService;
 use App\Validator\ComplexValidator;
-use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\Persistence\ManagerRegistry;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
